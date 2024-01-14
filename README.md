@@ -1,13 +1,15 @@
 # React-native-tournament-brackets
 
 Create a react-native project:
+  
   **npx react-native init [ProjectName]**
 
 Put the tournament bracket files into the src folder.
 
 In app.js (or wherever you want to use the brackets) import the brackets:
-  **import { Bracket } from './React-native-tournament-brackets/React-bracket-native';
-**
+
+  **import { Bracket } from './React-native-tournament-brackets/React-bracket-native';**
+
 Create the match data:
   Example match data 1:
     const matches = [
