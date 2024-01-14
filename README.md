@@ -2,16 +2,18 @@
 
 Create a react-native project:
   
-  **npx react-native init [ProjectName]**
+    npx react-native init [ProjectName]
 
 Put the tournament bracket files into the src folder.
 
 In app.js (or wherever you want to use the brackets) import the brackets:
 
-  **import { Bracket } from './React-native-tournament-brackets/React-bracket-native';**
+    import { Bracket } from './React-native-tournament-brackets/React-bracket-native';
 
 Create the match data:
-  Example match data 1:
+
+Example match data 1:
+	    
     const matches = [
     {
       "title": "Round 1",
@@ -72,11 +74,11 @@ Create the match data:
         }
       ]
     }
-  ];
+		];
 
 Example match data 2:
-  const matches = [
-  {
+
+    const matches = [{
     "title": "Round 1",
     "seeds": [
       {
@@ -93,9 +95,8 @@ Example match data 2:
         ],
         "winnerId": 15325956
       }
-    ]
-  },
-  {
+    ]},
+	{
     "title": "Round 2",
     "seeds": [
       {
@@ -155,8 +156,8 @@ Example match data 2:
         "winnerId": 15326313
       }
     ]
-  },
-  {
+		},
+	{
     "title": "Round 3",
     "seeds": [
       {
@@ -188,8 +189,8 @@ Example match data 2:
         "winnerId": 15153710
       }
     ]
-  },
-  {
+		},
+	{
     "title": "Round 4",
     "seeds": [
       {
@@ -207,8 +208,8 @@ Example match data 2:
         "winnerId": 15153710
       }
     ]
-  },
-  {
+		},
+	{
     "title": "Round 5",
     "seeds": [
       {
@@ -226,12 +227,11 @@ Example match data 2:
         "winnerId": 15315304
       }
     ]
-  }
-];
+		}
+	];
 
 use the Bracket component:
-        <View>
-          <Bracket rounds={matches} />
-        </View>
+
+    <Bracket rounds={matches} />
 
 
